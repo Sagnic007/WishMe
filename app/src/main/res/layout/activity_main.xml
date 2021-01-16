@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="@string/enter_the_name_here"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/write"
+        android:layout_width="301dp"
+        android:layout_height="58dp"
+        android:hint="@string/enter_name_here"
+        android:paddingStart="20sp"
+        android:paddingTop="0.5sp"
+        android:textStyle="bold"
+        android:background="@drawable/neon2"
+        android:textColorHint="#68FFFFFF"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="0.549"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="232dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="212dp"
+        android:padding="12sp"
+        android:text="@string/wish_here"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2688FF"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:padding="10sp"
+                android:background="@drawable/logo">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wish_me"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:paddingStart="9sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>
